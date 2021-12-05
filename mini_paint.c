@@ -77,7 +77,7 @@ int check_shape(t_shape *shape)
 int is_in(int x, int y, t_shape *shape)
 {
 	float distance;
-	distance = sqrtf( pow(x - shape->x, 2) + pow(y - shape->y, 2));
+	distance = sqrtf( powf(x - shape->x, 2) + powf(y - shape->y, 2));
 	float differ;
 	differ = distance - shape->r;
 	if (differ > 0.00000000)
